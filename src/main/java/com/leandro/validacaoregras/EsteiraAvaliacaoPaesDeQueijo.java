@@ -9,14 +9,14 @@ import com.leandro.validacaoregras.excecoes.PacoteDefeituosoException;
 import com.leandro.validacaoregras.excecoes.PaoDeQueijoDefeituosoException;
 import com.leandro.validacaoregras.regras.Regra;
 import lombok.AllArgsConstructor;
-import lombok.extern.log4j.Log4j;
+import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
 
 @AllArgsConstructor
 @Component
-@Log4j
+@Log4j2
 public class EsteiraAvaliacaoPaesDeQueijo {
 
     private final List<Regra<PaoDeQueijo, PaoDeQueijoDefeituosoException>> regrasPaoDeQueijo;
